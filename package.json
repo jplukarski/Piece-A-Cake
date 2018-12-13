@@ -1,0 +1,28 @@
+{
+  "name": "Piece-A-Cake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jplukarski/Piece-A-Cake.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jplukarski/Piece-A-Cake/issues"
+  },
+  "homepage": "https://github.com/jplukarski/Piece-A-Cake#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.3.16"
+  }
+}
