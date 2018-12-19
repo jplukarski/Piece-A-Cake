@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Grid, } from 'semantic-ui-react'
 
 
-const AnotherGridLayout = () => (
+const TopHeader = () => (
     <Container>
 
         <style>{`
@@ -65,4 +65,4 @@ const AnotherGridLayout = () => (
     </Container >
 )
 
-export default AnotherGridLayout
+export default TopHeader
