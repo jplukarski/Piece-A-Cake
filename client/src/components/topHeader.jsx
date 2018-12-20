@@ -1,13 +1,13 @@
 import React from 'react'
-import { Container, Grid, } from 'semantic-ui-react'
+import { Grid, } from 'semantic-ui-react'
 
 
 const TopHeader = () => (
-    <Container>
-
+    <>
         <style>{`
-      html, body {
-        background-image: url("https://wallpapercave.com/wp/wp2610943.jpg")
+      .top-container {
+        background: radial-gradient(white, #f8f9fa, #f9dd8c);
+
       }
       p {
         align-content: center;
@@ -23,46 +23,44 @@ const TopHeader = () => (
       }
     }
     `}</style>
+        <div className="top-container">
+            <Grid columns='equal'>
+                <Grid.Row columns='equal'>
 
-        <Grid columns='equal'>
-            <Grid.Row columns='equal'>
-                <Grid.Column>
-                    <p>
-                        <span>
-                            Birthday Parties <br></br>Graduations
-                        </span>
-                    </p>
-                </Grid.Column>
-                <Grid.Column>
-                    <p>
-                        <br></br>
-                        <br></br>
-                        <h1><span role="img" aria-label="cake">🍰</span><span style={{ fontSize: "1.5em" }}>Piece-A-Cake</span><span role="img" aria-label="cake2">🎂</span></h1>
-                        <h3 id="subtitle" style={{ color: 'black' }}>All occassion cakes</h3>
+                    <Grid.Column>
+                        <p>
+                            <br></br>
+                            <br></br>
+                            <h1><span role="img" aria-label="cake">🍰</span><span style={{ fontSize: "1.5em" }}>Piece-A-Cake
+                                <span role="img" aria-label="cake2">🎂</span>
+                                <h3 id="subtitle" style={{ color: 'black' }}>All occassion cakes and other desserts</h3>
+                            </span>
+                            </h1>
 
-                    </p>
-                </Grid.Column>
-                <Grid.Column>
-                    <p>
-                        <span>Reuinions<br></br>Anniversaries</span>
-                    </p>
-                </Grid.Column>
-            </Grid.Row>
-            <Grid.Row columns='equal'>
-                <Grid.Column>
-                    <p>
-                        <span>Annette Plukarski</span>
-                    </p>
-                </Grid.Column>
-                <Grid.Column>
-                    <p>
-                        <span>Oak Forest, Il</span>
-                    </p>
-                </Grid.Column>
-            </Grid.Row>
-        </Grid>
+                        </p>
+                    </Grid.Column>
 
-    </Container >
+                </Grid.Row>
+                <Grid.Row columns='equal'>
+                    <Grid.Column>
+                        <p>
+                            <span>Annette Plukarski</span>
+                            <span>anet417@sbcglobal.net</span>
+
+                        </p>
+                    </Grid.Column>
+                    <Grid.Column>
+                        <p>
+                            <span>Oak Forest, Illinois</span>
+                            <span>(708) 555 4200</span>
+
+                        </p>
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
+
+        </div >
+    </>
 )
 
 export default TopHeader

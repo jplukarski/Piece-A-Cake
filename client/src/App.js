@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import TopHeader from "./components/topHeader"
 import Navbar from "./components/navbar"
+import ContentContainer from "./components/contentContainer"
+import Footer from "./components/footer"
 
 
 class App extends Component {
@@ -12,14 +14,12 @@ class App extends Component {
 
 
 
+        <TopHeader />
         <Navbar />
-        <TopHeader />
-        <TopHeader />
-        <TopHeader />
-        <TopHeader />
-        <TopHeader />
-
-
+        <ContentContainer />
+        <ContentContainer />
+        <ContentContainer />
+        <Footer />
 
       </div>
     );
