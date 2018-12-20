@@ -9,12 +9,29 @@
     flex-direction: column;
     justify-content: center;
     min-height: 6em;
+
+
   }
   p > span {
     opacity: 0.4;
     text-align: center;
+
   }
 
-.bottom-segment{
-background-color: #cb5351;
+.bottom-segment-top{
+background-color: #f9c68c !important;
+color:#cb5351;
+}
+
+.footerQuoteButton{
+  margin-right: 2rem !important;
+}
+
+.bottom-segment-bottom {
+background-color: #f9dd8c !important;
+
+}
+
+body{
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important */
 }

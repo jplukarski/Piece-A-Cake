@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import SocialMediaButtons from "./socialMediaButtons"
 import { Dropdown, Menu, Image } from 'semantic-ui-react'
-
-
-
+import QuoteButton from "./quoteButton"
 
 export default class Navbar extends Component {
     state = {}
@@ -36,12 +34,9 @@ export default class Navbar extends Component {
                     About
         </Menu.Item>
 
-                <Menu.Item
-                    name='order'
-                    active={activeItem === 'order'}
-                    onClick={this.handleItemClick}>
-                    Order
-        </Menu.Item>
+                <Menu.Item>
+                    <QuoteButton />
+                </Menu.Item>
 
                 <Menu.Menu position='right'>
                     <Dropdown item text='Occassion'>

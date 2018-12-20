@@ -9,6 +9,7 @@
     "react-scripts": "2.1.1",
     "react-sticky": "^6.0.3",
     "react-sticky-dynamic-header": "^0.1.2",
+    "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.84.0"
   },
   "scripts": {

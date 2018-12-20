@@ -21,7 +21,6 @@ export default class SocialMediaButtons extends Component {
                         <div className="ui custom popup top left transition hidden">Copied anet417@sbcglobal.net</div>
                     </Button>
                 </a>
-                <Button primary>Hello</Button>
             </Menu.Item>
         )
     }
