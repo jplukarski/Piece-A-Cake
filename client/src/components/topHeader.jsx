@@ -4,25 +4,7 @@ import { Grid, } from 'semantic-ui-react'
 
 const TopHeader = () => (
     <>
-        <style>{`
-      .top-container {
-        background: radial-gradient(white, #f8f9fa, #f9dd8c);
 
-      }
-      p {
-        align-content: center;
-        color: #cb5351;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 6em;
-      }
-      p > span {
-        opacity: 0.4;
-        text-align: center;
-      }
-    }
-    `}</style>
         <div className="top-container">
             <Grid columns='equal'>
                 <Grid.Row columns='equal'>
