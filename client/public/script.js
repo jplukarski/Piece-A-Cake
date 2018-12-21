@@ -1,8 +1,5 @@
 $(document).ready(function () {
 
-    $(".test").on("click", function () {
-        console.log("Hello")
-    })
 
     // fix main menu to page on passing
     $('.main.menu').visibility({
@@ -12,16 +9,37 @@ $(document).ready(function () {
         type: 'fixed',
         offset: 80
     });
-    // lazy load images
-    $('.image').visibility({
-        type: 'image',
-        transition: 'vertical flip in',
-        duration: 500
-    });
+
     // show dropdown on hover
     $('.main.menu  .ui.dropdown').dropdown({
         on: 'hover'
     });
+
+    // Fix jumping screen, need to find a better fix because this one is still jumpy but corrects it
+
+    var mn = $('.stackable'),
+        core = $('.band').eq(0),
+        fix = core.attr('style') || '',
+        bit, hdr;
+
+    $(window).resize(function () {
+
+        bit = mn.outerHeight();
+        hdr = $('.top-container').outerHeight();
+    })
+        .resize().scroll(function () {
+
+            if ($(this).scrollTop() > hdr) {
+                core.css('margin-top', bit);
+            } else {
+                core.attr('style', fix);
+            }
+        })
+        .on('load', function () {
+
+            $(this).scroll();
+        });
+    // ______________________________________________________________________________________________________
 
     // Hitting the copy button copies your email address and related animations
     // ______________________________________________________________________________________________________

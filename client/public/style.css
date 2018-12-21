@@ -2,20 +2,18 @@
     background: radial-gradient(white, #f8f9fa, #f9dd8c);
 
   }
-  p {
+p {
     align-content: center;
     color: #cb5351;
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: center;
-    min-height: 6em;
-
-
+     min-height: 6em;
   }
-  p > span {
-    opacity: 0.4;
-    text-align: center;
 
+p > span {
+    opacity: 0.4;
+   text-align: center; 
   }
 
 .bottom-segment-top{
@@ -32,6 +30,12 @@ background-color: #f9dd8c !important;
 
 }
 
-body{
-  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important */
+.placeholder {
+  display: none !important;
+}
+
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
 }

@@ -16,7 +16,7 @@ export default class SocialMediaButtons extends Component {
                     </Button>
                 </a>
                 <a>
-                    <Button icon className="myEmail">
+                    <Button icon color='google plus' className="myEmail">
                         <Icon name='mail' />
                         <div className="ui custom popup top left transition hidden">Copied anet417@sbcglobal.net</div>
                     </Button>
