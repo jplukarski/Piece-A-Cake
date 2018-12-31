@@ -5,6 +5,7 @@ import Navbar from "./components/navbar"
 import Cakes from "./components/cakes"
 import Footer from "./components/footer"
 import Cookies from "./components/cookies"
+import Cupcakes from "./components/cupcakes"
 
 
 class App extends Component {
@@ -18,7 +19,7 @@ class App extends Component {
 
           <Cakes />
           <Cookies />
-          <Cakes />
+          <Cupcakes />
           <Footer />
         </div>
 

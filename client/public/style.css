@@ -19,6 +19,8 @@ p > span {
 .bottom-segment-top{
 background-color: #f9c68c !important;
 color:#cb5351;
+border: none !important;
+
 }
 
 .footerQuoteButton{
@@ -27,7 +29,7 @@ color:#cb5351;
 
 .bottom-segment-bottom {
 background-color: #f9dd8c !important;
-
+border: none !important;
 }
 
 .placeholder {

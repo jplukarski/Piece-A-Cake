@@ -7,12 +7,11 @@ import QuoteButton from "./quoteButton"
 export default class Footer extends Component {
     render() {
         return (
-            <Segment.Group>
+            <Segment.Group >
                 <Segment size="massive" className="bottom-segment-top">
                     <span className="footerQuoteButton">
-
                         Don't wait! Order a cake for that special occasion now!
-                </span>
+                    </span>
                     <QuoteButton />
                 </Segment>
 
@@ -27,8 +26,7 @@ export default class Footer extends Component {
                             Oak Forest, Il
                         </p>
                     </Segment>
-                    <Segment>Middle</Segment>
-                    <Segment>Bottom</Segment>
+                    <Segment><p>Cakes</p></Segment>
                 </Segment.Group>
                 <Segment className="bottom-segment-bottom">
                     <SocialMediaButtons />
