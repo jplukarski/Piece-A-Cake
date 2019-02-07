@@ -4,15 +4,12 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
-    "babel-loader": "^8.0.4",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "mongoose": "^5.4.10",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
-    "react-sticky": "^6.0.3",
-    "react-sticky-dynamic-header": "^0.1.2",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.84.0"
+    "react-scripts": "2.1.3",
+    "semantic-ui-react": "^0.85.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,8 +25,5 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "gulp": "^4.0.0"
-  }
+  ]
 }
