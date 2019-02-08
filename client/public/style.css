@@ -19,44 +19,12 @@
 
 .top-container {
     background: radial-gradient(white, #f8f9fa, #f9dd8c);
-
   }
+
 p {
-    align-content: center;
-    color: #cb5351;
+    color: #e1493f;
     display: flex; 
-    flex-direction: column;
     justify-content: center;
-     min-height: 6em;
+     min-height: 3em;
   }
 
-p > span {
-    opacity: 0.4;
-   text-align: center; 
-  }
-
-.bottom-segment-top{
-background-color: #f9c68c !important;
-color:#cb5351;
-border: none !important;
-
-}
-
-.footerQuoteButton{
-  margin-right: 2rem !important;
-}
-
-.bottom-segment-bottom {
-background-color: #f9dd8c !important;
-border: none !important;
-}
-
-.placeholder {
-  display: none !important;
-}
-
-html,
-body {
-  margin: 0 !important;
-  padding: 0 !important;
-}
