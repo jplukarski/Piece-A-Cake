@@ -14,6 +14,6 @@ const dessertSchema = new Schema({
 
 });
 
-const Article = mongoose.model("Article", dessertSchema);
+const Dessert = mongoose.model("Dessert", dessertSchema);
 
-module.exports = Article;
+module.exports = Dessert;
