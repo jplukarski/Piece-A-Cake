@@ -80,6 +80,7 @@ export default class MyForm extends React.Component {
                             <option value='Wedding' />
                             <option value='Work Outing' />
                             <option value='Party' />
+                            <option value='Holiday' />
                             <option value='Other' />
                         </datalist>
                     </div>
