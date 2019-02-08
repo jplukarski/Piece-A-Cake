@@ -46,7 +46,18 @@ export default class MyForm extends React.Component {
             facebook_link: this.state.facebook_link,
             tags: this.state.tags,
         })
-            .then(console.log("Attempted"))
+            .then(
+                this.setState({
+                    occassion: "",
+                    dessert: "",
+                    description: "",
+                    image: [],
+                    instagram_link: "",
+                    facebook_link: "",
+                    tags: [],
+                    new_tag: ""
+                })
+            )
             .catch(err => console.log(err));
     }
 
@@ -65,6 +76,10 @@ export default class MyForm extends React.Component {
                             <option value='Birthday' />
                             <option value='Anniversary' />
                             <option value='Graduation' />
+                            <option value='Baby Shower' />
+                            <option value='Wedding' />
+                            <option value='Work Outing' />
+                            <option value='Party' />
                             <option value='Other' />
                         </datalist>
                     </div>
@@ -74,6 +89,7 @@ export default class MyForm extends React.Component {
                             <option value='Cakes' />
                             <option value='Cookies' />
                             <option value='Cupcakes' />
+                            <option value='Pies' />
                             <option value='Other' />
                         </datalist>
                     </div>
