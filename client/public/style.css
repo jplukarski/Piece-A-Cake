@@ -28,3 +28,8 @@ p {
      min-height: 3em;
   }
 
+/* Adjust homepage container */
+.homepageContainer{
+    margin-top: 1em
+}
+/* ------------------------- */

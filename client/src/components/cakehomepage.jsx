@@ -10,7 +10,6 @@ class HomeCakes extends Component {
 
     componentDidMount() {
         this.loadCakes();
-
     }
 
     loadCakes = () => {
@@ -24,30 +23,31 @@ class HomeCakes extends Component {
 
     render() {
         return (
-            <>
+            <div className="homepageContainer">
                 <Header as='h3' dividing>
                     A Cake for all occasions
                 </Header>
-                {this.state.cakes.length ? (
-                    < Card.Group itemsPerRow={4}>
-                        {this.state.cakes.map(cake => (
-                            cake.dessert === "Cakes" ?
-                                <Card key={cake._id}>
-                                    <Image src={cake.image} />
-                                    <Card.Content>
-                                        <Card.Header>{cake.dessert}</Card.Header>
-                                        <Card.Meta>{cake.occassion}</Card.Meta>
-                                        <Card.Description>{cake.description}</Card.Description>
-                                    </Card.Content>
-                                </Card>
-                                : console.log(".")
-                        )
+                {
+                    this.state.cakes.length ? (
+                        < Card.Group itemsPerRow={4}>
+                            {this.state.cakes.map(cake => (
+                                cake.dessert === "Cakes" ?
+                                    <Card key={cake._id}>
+                                        <Image src={cake.image} />
+                                        <Card.Content>
+                                            <Card.Header>{cake.dessert}</Card.Header>
+                                            <Card.Meta>{cake.occassion}</Card.Meta>
+                                            <Card.Description>{cake.description}</Card.Description>
+                                        </Card.Content>
+                                    </Card>
+                                    : console.log(".")
+                            )
 
-                        )}
-                    </Card.Group>
-                ) : (<h3>No Results to Display</h3>)
+                            )}
+                        </Card.Group>
+                    ) : (<h3>No Results to Display</h3>)
                 }
-            </>
+            </div >
         )
     }
 }
